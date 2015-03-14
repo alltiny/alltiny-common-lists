@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * This utility class provides some methods native lists do not dealing with lists.
+ * This utility class provides some methods native lists do provide.
  * @since 1.0
  */
 public class Lists {

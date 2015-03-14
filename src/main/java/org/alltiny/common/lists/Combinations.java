@@ -30,12 +30,14 @@ public class Combinations {
     }
 
     /**
-     * This method will create all possible distinct tuples of the given candidates. The tuples will
-     * have the (with dimensions) requested number of elements. If a combination is given, then all
-     * tuples are build using this combination.
+     * This method will create all possible combinations of the given candidates. Distinct means
+	 * that each combination will regardless of order of their elements only appear once. The
+	 * parameter dimension determines who may elements each combination shall have. If a starting
+	 * combination is given, then the result are only those combinations which include the starting
+	 * combination.
      * @param candidates all candidates which are available for building combinations/tuples.
-     * @param dimension number of elements of each combination/tuple
-     * @param combination to combine with all candidates; can be null
+     * @param dimension number of elements each resulting combination/tuple must have
+     * @param combination all resulting combination must contain; can be null for none
      * @since 1.0
      */
     public static <Type> Set<List<Type>> joinDistinct(Collection<Type> candidates, final int dimension, List<Type> combination) {
